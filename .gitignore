@@ -117,7 +117,8 @@ local.properties
 *.swp
 *~.nib
 # Thumbnails
-
+.streamlit
+*.toml
 # Windows
 # Image file caches
 Thumbs.db

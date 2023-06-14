@@ -4,11 +4,12 @@ from langchain.chains import SequentialChain, LLMChain
 from langchain.memory import ConversationBufferMemory
 from langchain.prompts import PromptTemplate
 from langchain.llms import OpenAI
-from dotenv import load_dotenv, find_dotenv
-_ = load_dotenv(find_dotenv())
+# from dotenv import load_dotenv, find_dotenv
+# _ = load_dotenv(find_dotenv())
 
 
-llm = OpenAI(openai_api_key=os.getenv("OPENAI_API_KEY"), temperature=0.9)
+
+llm = OpenAI(openai_api_key=st.secrets["OPENAI_API_KEY"], temperature=0.9)
 
 
 first_prompt = PromptTemplate(
